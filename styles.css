@@ -627,5 +627,6 @@ section{
 @media (max-width:790px){
     .fa-circle-arrow-left,.fa-circle-arrow-right{
         display: none;
+        
     }
 }
