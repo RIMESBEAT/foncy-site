@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bigelow+Rules&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+
+<title>
+        Foncy Web
+    </title>
+</head>
+<body>
+    <header class="header">
+
+        <nav id="nav">
+            <div class="container nav__container ">
+               <a href="">
+                <div class="logo">F<span>ON</span>CY</div>
+               </a> 
+                <div class="nav__items  ">
+                    <div class="open__bugger ">
+                  <button class="bugger__btn hidden btn__hide"><i class="fa-solid fa-bars"></i></button>  
+                </div>
+                  <ul class="nav__links hidden  ">
+                        <button class="close__btn btn__hide"><i class="fa-solid fa-xmark"></i></button>
+                        <li class="links active"><a class="links__btn" href="#">HOME</a></li>
+                        <li class="links"><a class="links__btn" href="#products">PRODUCTS</a></li>
+                        <li class="links"><a class="links__btn" href="#about">CONTACTS</a></li>
+                        <li class="links"><a class="links__btn" href="#">CART</a></li>
+                    </ul>
+                </div>
+               
+            </div>
+            <div class="overlay hidden"></div>
+        </nav>
+    <section id="hero">
+        <div class="hero__container">
+            <!-- Slider main container -->
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <img src="../assets/slide 1.jpg" alt="">
+        </div>
+        <div class="swiper-slide ">
+            <img src="../assets/slide 2.jpg"   alt="">
+        </div>
+        <div class="swiper-slide">
+            <img src="../assets/slide 3.jpg"   alt="">
+        </div>
+        </div>
+            <div class="swiper-pagination"></div>
+    
+        <i class="fa-solid fa-circle-arrow-left swiper__arrows"></i>
+        <i class="fa-solid fa-circle-arrow-right swiper__arrows"></i>
+    
+        <div class="swiper-scrollbar"></div>
+    </div>    
+        </div>
+
+    </section>
+    </header>
+
+
+    <section id="products">
+<h1 class="title">PRODUCTS</h1>
+<div class="cards"></div>
+<div class='card__banner__box '>
+</div>
+</section>
+<section id="recent">
+<h1 class="title">OUR RECENT PRODUCTS</h1>
+<div class="cards1"></div>
+<div class='card__banner__box '>
+</div>
+
+</section>
+
+
+<section id="about"> 
+    
+    <div class="about__content">
+        <h1 class="title">CONTACT US</h1>
+        <div class="about__box">
+            <div class="about__image__box">
+
+                <img src="https://img.freepik.com/free-photo/beautiful-black-woman-with-afro-curls-hairstylesmiling-model-yellow-hoodiesexy-carefree-female-enjoying-listening-music-wireless-headphonesposing-street-background-sunset_158538-21024.jpg?w=2000" alt="" class="about__img">
+            </div>
+        <div class="about__text">
+            <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quis laboriosam, facilis voluptas ducimus quod obcaecati ratione sapiente quas est vitae fuga tempora ex nobis eos ipsam reiciendis! Voluptatibus nostrum delectus sit labore qui eum vel nulla non asperiores cum.</P>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet optio maxime voluptates fugiat natus unde provident sint, dolor excepturi magni quis pariatur nostrum qui vero deserunt porro, reprehenderit tempora, iure vitae perspiciatis in! Aspernatur, accusamus!</p>
+        <div class="contact">
+            <div class="news__letter">
+                <h4 class="news__title">CONTACT US</h4>
+                <form action=''>
+                <input id="fname" type="text" class="input__field name__field" placeholder="Enter Your First Name Here:">
+                <input id="email" type="email" class="input__field name__field" placeholder="Enter Your email Here:">
+                <br>
+            <textarea name="" id="" cols="45" class="input__field message__field" rows="" placeholder="write your Message here"></textarea>    
+            <button type="submit" class="btn message__btn" value="Send Email">Message Us</button>
+            </form>
+            </div>
+        </div>
+        </div>
+        <div class="socials">
+            <a href="https://web.whatsapp.com" target="_blank">
+            <i class="fa-brands fa-whatsapp" ></i>
+            </a>
+            <a href="https://web.whatsapp.com" target="_blank">
+            <i class="fa-brands fa-facebook"></i>
+            </a>
+            
+            <a href="https://web.whatsapp.com" target="_blank">
+                <i class="fa-brands fa-tiktok"></i>
+             </a>
+             <a href="https://web.whatsapp.com" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+             </a>
+            
+            
+        </div>
+        
+    </div>
+    <a href="#" class="CTA__btn"><i class="fa-solid fa-circle-chevron-up"></i></a>
+    
+    </div>
+   
+
+</section>
+<section id="contributors">
+    <div class="contributors__content">
+        <div class="operations">
+            <h1 class="title">Our Sponsors</h1>
+            <div class="operation__btn__container ">
+                <button class="operation__btn--1 operation__btn btn" data-tab="1">Mrs. Johnson</button>
+                <button class="operation__btn--2 operation__btn btn" data-tab="2">Miss Bella</button>
+                <button class="operation__btn--3 operation__btn btn" data-tab="3">Dr. Abayomi</button>
+            </div>
+            <div class="operation__content__box ">
+                <div class="operation__content--1 operation__content content__active operation__flex">
+                    <img src="https://media.istockphoto.com/photos/beautiful-black-woman-picture-id497864320?k=20&m=497864320&s=170667a&w=0&h=NAvg2h4_M3LeipC7eRUte8M6fCGoei4YwKMVQcntFcc=" alt="" class="about__img">
+                    <div class="operation__text">
+                        <h1 class="sponsor__head">Mrs. Johnson</h1>
+                        <p class="operation__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum distinctio id ipsum numquam quae, aspernatur aliquid blanditiis
+                             officia esse corporis, accusantium quaerat saepe itaque, facere at voluptatum vel reiciendis quibusdam quis rem provident? 
+                            Adipisci alias quae eos facere distinctio, quibusdam eaque dolor laudantium, ratione nulla vitae numquam voluptatem dolorum dolores.
+                        </p>
+                    </div>
+
+                </div>
+                <div class="operation__content--2 operation__content operation__flex">
+                    <img src="https://images.unsplash.com/photo-1597393922738-085ea04b5a07?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmVhdXRpZnVsJTIwYmxhY2slMjB3b21hbnxlbnwwfHwwfHw%3D&w=1000&q=80" alt="" class="about__img">
+                    <div class="operation__text">
+                        <h1 class="sponsor__head">Miss Bella</h1>
+                        <p class="operation__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum distinctio id ipsum numquam quae, aspernatur aliquid blanditiis
+                             officia esse corporis, accusantium quaerat saepe itaque, facere at voluptatum vel reiciendis quibusdam quis rem provident? 
+                            Adipisci alias quae eos facere distinctio, quibusdam eaque dolor laudantium, ratione nulla vitae numquam voluptatem dolorum dolores.
+                        </p>
+                    </div>
+
+                </div>
+                <div class="operation__content--3 operation__content operation__flex">
+                   <img src="https://media.istockphoto.com/photos/fit-man-standing-outdoors-in-a-city-picture-id1299360127?k=20&m=1299360127&s=612x612&w=0&h=6UyqPV7N1CIn2XhYFnb4-xrDfBGODRmJZbuva4Q0JME=" alt="" class="about__img">
+                    <div class="operation__text">
+                        <h1 class="sponsor__head">Dr. Abayomi</h1>
+                        <p class="operation__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum distinctio id ipsum numquam quae, aspernatur aliquid blanditiis
+                             officia esse corporis, accusantium quaerat saepe itaque, facere at voluptatum vel reiciendis quibusdam quis rem provident? 
+                            Adipisci alias quae eos facere distinctio, quibusdam eaque dolor laudantium, ratione nulla vitae numquam voluptatem dolorum dolores.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="portfolio">
+
+    <h1 class="title">Our Portfolio</h1>
+        <div class="my-slider">
+
+          <div class="portfolio__slider">
+            <img src="https://i.pinimg.com/564x/ce/10/a5/ce10a51bde9c065be0d27ca485b3963c.jpg" alt="" class="portfolio__img">
+          <p class="portfolio__description">Beautiful Ankara design</p>
+        </div>
+          <div class="portfolio__slider">
+            <img src="https://1.bp.blogspot.com/-zCOVJkeeHxY/YGW0q3hd0pI/AAAAAAAAEbI/g1I0sOqsN_Mm1Z5sa2kXeCghiXmukmdlQCLcBGAsYHQ/s1024/13-Enthralling-Ankara-Styles-Alluring-African-Dresses-For-Women-2020-12-820x1024-1.jpg" alt="" class="portfolio__img">
+            <p class="portfolio__description">Beautiful Ankara design</p>
+          
+        </div>
+          <div class="portfolio__slider">
+            <img src="https://fashionstyle.ng/wp-content/uploads/2022/01/1641808445_latest-ankara-fashion.jpg" alt="" class="portfolio__img">
+          </div>
+          <div class="portfolio__slider">
+            <img src="https://i0.wp.com/fashionstyle.ng/wp-content/uploads/2022/01/latest-ankara-fasion-11.jpg?resize=640%2C799&ssl=1" alt="" class="portfolio__img">
+          </div>
+          <div class="portfolio__slider">
+            <img src="https://maboplus.com/wp-content/uploads/2020/09/latest-ankara-skirt-styles-12.jpg" alt="" class="portfolio__img">
+          </div>
+          <div class="portfolio__slider">
+            <img src="https://ankarastyles.shop/wp-content/uploads/2022/01/Titi-Ankara-Dress-Black-510x680.jpg" alt="" class="portfolio__img">
+          </div>
+          <div class="portfolio__slider">
+            <img src="https://shweshwe1.com/wp-content/uploads/2019/09/ankara-beach-dresses-1.jpg" alt="" class="portfolio__img">
+          </div>
+          <div class="portfolio__slider">
+            <img src="https://i.pinimg.com/originals/d0/6e/a3/d06ea318d6245d8c288c22d18511ac30.jpg" alt="" class="portfolio__img">
+          </div>
+        </div>
+</section>
+<section id="footer">
+    <div class="footer__container">
+        <div class="footer__content">
+            <h1 class="footer__head">Site Links</h1> 
+        <div class="footer__content__box">
+        <ul class="footer__list">
+            <li>
+            <a href="#products" class="list__links">Products</a>
+            </li>
+            <li>
+            <a href="recent" class="list__links">Our Recent Products</a>
+            </li>
+            <li>
+            <a href="#about" class="list__links">Contact US</a>
+            </li>
+            <li>
+            <a href="#contributors" class="list__links">Our Sponsor</a>
+            </li>
+            <li>
+            <a href="#portfolio" class="list__links">Portfolio</a>
+            </li>
+        </ul>   
+        </div>
+            <div class="footer__socials">
+             
+                    <a href="https://web.whatsapp.com" target="_blank">
+                    <i class="fa-brands fa-whatsapp" ></i>
+                    </a>
+                    <a href="https://web.whatsapp.com" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    
+                    <a href="https://web.whatsapp.com" target="_blank">
+                        <i class="fa-brands fa-tiktok"></i>
+                     </a>
+                     <a href="https://web.whatsapp.com" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                     </a>
+                     
+            </div>
+            <h1 class="copyright">&copy;</h1>
+        </div>
+
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
