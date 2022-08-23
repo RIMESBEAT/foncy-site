@@ -143,19 +143,21 @@ section{
     
     position: relative;
     width: 100%;
-    height: 80%;
+    height: 100%;
 
 }
 .swiper-slide{
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 300px;
+    width: 100%;
 }
 .swiper-slide img{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: 70%  30% ;
+    object-position:top center;
 }
 .swiper {
     width: 100%;
