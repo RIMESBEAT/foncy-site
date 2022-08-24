@@ -631,12 +631,12 @@ section{
 
     }
     .fa-whatsapp:hover{
-        color: none;
+        color: var(--black);
     }
     .fa-facebook:hover{
-        color: none;
+        color: var(--black);
     }
     .fa-instagram:hover{
-        color: none;
+        color: var(--black);
     }
 }
