@@ -578,6 +578,9 @@ section{
     top: 0;
     right: 0;
     }
+    .container{
+        padding: .2rem 2rem;
+    }
     .hidden{
         display: none;
     }
