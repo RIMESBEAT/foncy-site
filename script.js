@@ -71,8 +71,15 @@ const swiper = new Swiper('.swiper', {
   const aboutContent = document.querySelector('#about')
   const ctaBtn = document.querySelector('.CTA__btn')
   const copyright = document.querySelector('.copyright')
+  const accountBox = document.querySelector('.account__box')
+  const accountBtn = document.querySelector('.account__btn')
+  const modalCloseBtn = document.querySelector('.modal__close__btn')
+
 
 //          NAV TOGGLE
+
+
+
 
 const burgerIcon = () => {
     navLinks.classList.remove('hidden')
@@ -90,8 +97,21 @@ closeBtn.addEventListener('click', closeIcon)
 
 overlay.addEventListener('click', closeIcon)
 
+
 links.forEach(btn => btn.addEventListener('click', closeIcon))
 
+const modalContent = () => {
+  accountBox.classList.remove('hidden')
+  overlay.classList.remove('hidden')
+}
+const closeModalContent = () => {
+  accountBox.classList.add('hidden')
+  overlay.classList.add('hidden')
+  
+}
+accountBtn.addEventListener('click', modalContent)
+accountBtn.addEventListener('click', closeIcon)
+modalCloseBtn.addEventListener('click', closeModalContent)
 //     NAV TOGGLE END
 
 //      NAV OPACITY EFFECT

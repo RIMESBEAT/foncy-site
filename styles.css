@@ -123,6 +123,7 @@ section{
     border-color: var(--white);
     border-radius: 5px;
     display: none;
+    
 }
 .links{
     padding: 6px;
@@ -139,6 +140,7 @@ section{
 .links a:hover{
     letter-spacing: 2px;
 }
+
 #hero{
     
     position: relative;
@@ -321,6 +323,7 @@ section{
     border-color: var(--blue);
     width: 80%;
     display: block;
+    border-radius: 6px;
 }
 .news__title{
     padding-top: 2rem;
@@ -567,6 +570,72 @@ section{
 .active{
    border-bottom: 2px solid var(--white);
 }
+.modal{
+    position: relative;
+}
+.account__btn{
+    background: var(--orange);
+    color: var(--white);
+    transition: var(--transition);
+}
+.account__btn:hover{
+    letter-spacing: 2px;
+}
+.account__box{
+    position: fixed;
+    width: 50%;
+    height: 80%;
+    background: #d92414cb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+    top: 10%;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    border-radius: 6px;
+
+}
+.modal__close__btn{
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 1.5rem;
+    padding: .8rem;
+
+    background: var(--white);
+    color: var(--red);
+    border-radius: 6px;
+    height: 1rem;
+    width: 1rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border: none;
+    
+}
+.account__box a, p, h1{
+    color: var(--white);
+}
+.account__field{
+    min-width: 250px;
+    outline: none;
+}
+.sign__btn{
+    margin: 1.5rem auto;
+    display: flex;
+    width: 50%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.register__btn{
+    margin:1rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 @media (max-width:903px){
     .overlay{
     width: 200vw;
@@ -581,11 +650,34 @@ section{
     .container{
         padding: .2rem 2rem;
     }
+    .account__box{
+        position: fixed;
+        width: 80%;
+    }
     .hidden{
         display: none;
     }
     .btn__hide{
         display: block;
+
+
+    }
+    .bugger__btn{
+        animation: navRotate;
+        animation-duration: .8s;
+        animation-iteration-count: 1;
+    }
+    .close__btn{
+        animation: navRotate;
+        animation-duration: .8s;
+        animation-iteration-count: 1;
+    }
+    .nav__links::after{
+        content: '';
+    animation: navTransition;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    animation-play-state: running;
     }
     .nav__links {
     flex-direction: column;
@@ -594,15 +686,31 @@ section{
     position: absolute;
     background-color: var(--blue);
     z-index: 8;
-    right: -4rem;
+    right: -2rem;
     top: 1rem;
     border-radius:0 0 12px  12px  ;
     box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.5);
+    animation: navTransition;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    }
+  
+
+    @keyframes navTransition{
+        50%{transform: translate(70px, 10px);}
 
     }
+    @keyframes navRotate{
+        70%{transform: rotate(80deg);}
+        100%{transform: rotate(0deg);}
+
+    }
+
+
     .links{
         border: none;
     }
+
     .cards, .cards1{
         padding: 2rem ;
     }
