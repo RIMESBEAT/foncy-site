@@ -62,7 +62,7 @@ const swiper = new Swiper('.swiper', {
   const overlay = document.querySelector('.overlay')
   const openBtn = document.querySelector('.open__bugger')
   const closeBtn = document.querySelector('.close__btn')
-  const links = document.querySelectorAll('.links')
+  const links = document.querySelectorAll('.links, .account__links')
   const nav =document.querySelector('#nav')
   const logo = document.querySelector('.logo')
   const navContainer = document.querySelector('.nav__container')
@@ -71,10 +71,9 @@ const swiper = new Swiper('.swiper', {
   const aboutContent = document.querySelector('#about')
   const ctaBtn = document.querySelector('.CTA__btn')
   const copyright = document.querySelector('.copyright')
-  const accountBox = document.querySelector('.account__box')
   const accountBtn = document.querySelector('.account__btn')
-  const modalCloseBtn = document.querySelector('.modal__close__btn')
-
+  const modalBox = document.querySelector('.modal__box')
+  const modalClose = document.querySelector('.modal__close')
 
 //          NAV TOGGLE
 
@@ -91,27 +90,27 @@ const closeIcon = () => {
     openBtn.classList.remove('hidden')
     overlay.classList.add('hidden')
 }
+const modalContent = () => {
+  modalBox.classList.remove('modal__hidden')
+  overlay.classList.remove('hidden')
+}
+const closeModalContent = () => {
+  modalBox.classList.add('modal__hidden')
+  overlay.classList.add('hidden')
+  
+}
 openBtn.addEventListener('click', burgerIcon)
 
 closeBtn.addEventListener('click', closeIcon)
 
 overlay.addEventListener('click', closeIcon)
 
-
 links.forEach(btn => btn.addEventListener('click', closeIcon))
 
-const modalContent = () => {
-  accountBox.classList.remove('hidden')
-  overlay.classList.remove('hidden')
-}
-const closeModalContent = () => {
-  accountBox.classList.add('hidden')
-  overlay.classList.add('hidden')
-  
-}
 accountBtn.addEventListener('click', modalContent)
-accountBtn.addEventListener('click', closeIcon)
-modalCloseBtn.addEventListener('click', closeModalContent)
+modalClose.addEventListener('click', closeModalContent)
+
+
 //     NAV TOGGLE END
 
 //      NAV OPACITY EFFECT

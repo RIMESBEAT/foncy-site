@@ -9,9 +9,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bigelow+Rules&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bigelow+Rules&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <link
   rel="stylesheet"
@@ -24,6 +24,7 @@
     </title>
 </head>
 <body>
+        </section>
     <header class="header">
 
         <nav id="nav">
@@ -31,6 +32,7 @@
                <a href="">
                 <div class="logo">F<span>ON</span>CY</div>
                </a> 
+
                 <div class="nav__items  ">
                     <div class="open__bugger ">
                   <button class="bugger__btn hidden btn__hide"><i class="fa-solid fa-bars"></i></button>  
@@ -41,11 +43,24 @@
                         <li class="links"><a class="links__btn" href="#products">PRODUCTS</a></li>
                         <li class="links"><a class="links__btn" href="#about">CONTACTS</a></li>
                         <li class="links"><a class="links__btn" href="#">CART</a></li>
-                        <li class="account__links links"><a class="links__btn btn account__btn" href="#">Account</a></li>
+                        <li class="account__links"><button class="links__btn btn account__btn" href="#modal">Account</button></li>
                         
                     </ul>
                 </div>
-               
+                    <div class="modal__box modal__box1 modal__hidden">
+                        <button class="modal__close btn__hide "><i class="fa-solid fa-xmark"></i></button>  
+                        <form action="">
+                        <hi class="sponsor">Sign-In</hi>
+                        <input type="text" class="input__field sign__field" placeholder="User or e-mail">
+                        <input type="password" class="input__field sign__field" placeholder="*******">
+                        <button type="submit" class="btn sign__btn">Sign In</button>
+                        <p>No account?</p>
+                        
+                    </form>
+                    <a href="./src/regForm.html" target="_blank" class="btn links reg__btn">Register Here</a>
+                    </div>
+
+
             </div>
             <div class="overlay hidden"></div>
         </nav>
@@ -272,21 +287,6 @@
         </div>
 
 </section>
-<div class="modal">
-    <div class="account__box hidden">
-        <button class="modal__close__btn "><i class="fa-solid fa-xmark"></i></button>  
-        
-        <form action="">
-            <h1 class="sponsor__head">Sign-In</h1>
-            <input type="text" class="input__field account__field" placeholder="UserName or e-mail">
-            <input type="password" class="input__field account__field" placeholder="********">
-            
-            <a href="" class="btn sign__btn">Sign In</a>
-            <p>Dont have Account?</p>
-            <a href="" class="register__btn">Register Here</a>
-        </form>
-       </div>
-</div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./script.js"></script>

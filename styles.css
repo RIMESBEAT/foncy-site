@@ -1,4 +1,3 @@
-@import 'swiper/css';
 :root{
     --black:#0D0D0D;
     --red:#D92414;
@@ -26,7 +25,7 @@ html{
     font-family: 'Roboto', sans-serif;
     scroll-behavior: smooth;
     background-color: var(--white);
-    overflow-x: hidden;
+    overflow-X: hidden;
     
 
 }  
@@ -45,7 +44,19 @@ section{
 }
 
 .overlay{
+    width: 200vw;
+    height: 1000vh;
+    backdrop-filter: blur(3px);
+    z-index: 3;
+    display: flex;
     position: absolute;
+    top: 0;
+    right: 0;
+    }
+    .hidden{
+        display: none;
+    }
+.modal__hidden{
     display: none;
 }
 
@@ -71,6 +82,7 @@ section{
     right: 0;
     background-color: var(--blue);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.685);
+    position: relative;
     
 }
 .nav__sticky{
@@ -346,15 +358,16 @@ section{
 }
 .socials{
     position: absolute;
-    bottom: 2rem;
+    bottom: 5rem;
     right: 1rem;
     display: flex;
     flex-direction: column;
     align-items:center ;
     justify-content: center;
     gap: 1rem;
+    padding: 4rem;
     cursor: pointer;
-    width: 2rem;
+    width: 2rem ;
     margin: auto;
     padding: .4rem 0;
     background-color:  var(--white);
@@ -368,11 +381,11 @@ section{
     background: none;
 }
 .fa-brands{
- font-size: 1.3rem;
+ font-size: 1rem;
  width: 100%;
- height: 100%;
+ height: 70%;
  transition: var(--transition);
- padding: 1rem;
+
     
 }
 .fa-brands:hover{
@@ -570,72 +583,90 @@ section{
 .active{
    border-bottom: 2px solid var(--white);
 }
-.modal{
-    position: relative;
-}
+
 .account__btn{
     background: var(--orange);
     color: var(--white);
+    border: none;
     transition: var(--transition);
 }
 .account__btn:hover{
     letter-spacing: 2px;
 }
-.account__box{
-    position: fixed;
-    width: 50%;
-    height: 80%;
-    background: #d92414cb;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin:auto;
-    top: 10%;
-    left: 0;
-    right: 0;
-    z-index: 2;
-    border-radius: 6px;
 
-}
-.modal__close__btn{
-    position: absolute;
-    top: 2rem;
-    right: 2rem;
-    font-size: 1.5rem;
-    padding: .8rem;
-
-    background: var(--white);
-    color: var(--red);
-    border-radius: 6px;
-    height: 1rem;
-    width: 1rem;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    border: none;
-    
-}
 .account__box a, p, h1{
     color: var(--white);
 }
-.account__field{
-    min-width: 250px;
-    outline: none;
+
+
+.modal__box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin: auto;
+    top: 70px;
+    right: 4rem;
+    background: #024059ad;
+    color: var(--white);
+    padding: 3rem;
+    border-radius: 6px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    z-index: 3;
+
+}
+.sign__field{
+    width: 100%;
 }
 .sign__btn{
-    margin: 1.5rem auto;
+    width: 60%;
+    margin: .5rem auto;
     display: flex;
-    width: 50%;
-    text-align: center;
+    outline: none;
+    border-color: var(--red) ;
+    color: var(--white);
+    font-weight: 700;
+    background:#D92414;
     align-items: center;
     justify-content: center;
+
 }
-.register__btn{
-    margin:1rem auto;
+.reg__btn{
+    background: var(--orange);
+    color: var(--white);
+    margin: 2rem auto;
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    
+}
+.modal__close{
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    padding: .2rem;
+    font-size: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    background: var(--white);
+    width: 1.5rem;
+    height: 1.5rem;
+    border-color: var(--red);
+    color: var(--orange);
+    
 }
+.modal__hidden{
+    display: none;
+}
+
+
+
+
+
+
+
 @media (max-width:903px){
     .overlay{
     width: 200vw;
@@ -750,4 +781,8 @@ section{
     .fa-instagram:hover{
         color: var(--black);
     }
+    .fa-brands:hover{
+        font-size: 1rem;
+           
+       }
 }
