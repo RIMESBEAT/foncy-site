@@ -783,6 +783,7 @@ section{
 @media (max-width:790px){
     .fa-circle-arrow-right, .fa-circle-arrow-left{
         display: none;
+        z-index: 0;
 
     }
     .fa-whatsapp:hover{
