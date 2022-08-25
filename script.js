@@ -74,7 +74,7 @@ const swiper = new Swiper('.swiper', {
   const accountBtn = document.querySelector('.account__btn')
   const modalBox = document.querySelector('.modal__box')
   const modalClose = document.querySelector('.modal__close')
-
+  const logoSpin = document.querySelector('.logo__spin')
 //          NAV TOGGLE
 
 
@@ -287,3 +287,8 @@ allSections.forEach((section) => {
 //        Copyright
 let newYear = new Date().getFullYear()
 copyright.innerHTML = 'copyright &copy; ' + newYear
+
+//    ON LOAD
+window.addEventListener('load', (e) => {
+  e.logoSpin.classList.remove('hidden')
+})

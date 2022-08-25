@@ -664,7 +664,20 @@ section{
 
 
 
+.logo__spin{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 20;
+    animation: logoSpin;
+    animation-duration: 3s;
+    animation-duration: infinite;
 
+}
+@keyframes logoSpin{
+    from{transform: rotate(80deg);}
+    to{transform: rotate(0deg);}
+}
 
 
 @media (max-width:903px){
