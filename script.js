@@ -289,6 +289,6 @@ let newYear = new Date().getFullYear()
 copyright.innerHTML = 'copyright &copy; ' + newYear
 
 //    ON LOAD
-window.addEventListener('load', (e) => {
+document.addEventListener('DOMContentloaded', (e) => {
   e.logoSpin.classList.remove('hidden')
 })
