@@ -782,7 +782,7 @@ section{
 }
 @media (max-width:790px){
     .fa-circle-arrow-right, .fa-circle-arrow-left{
-        visibility: hidden;
+        display: none;
 
     }
     .fa-whatsapp:hover{
