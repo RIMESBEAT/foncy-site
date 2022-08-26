@@ -18,23 +18,27 @@
             </span>
             <label class="passbox"> 
             Firstname:         
-            <input type="text" class="reg__field" name="firstname" size="15"/> 
+            <input type="text" class="reg__field" name="firstname" size="15" required/> 
             </label>
             <label class="passbox">
             Surname:          
-            <input type="text" class="reg__field" name="lastname" size="15"/>  
+            <input type="text" class="reg__field" name="lastname" size="15" required/>  
             </label>
             <label class="passbox">
-            Phone:          
-            <input type="text" class="reg__field" name="lastname" size="15"/>  
+            Phone:+234          
+            <input type="tel" class="reg__field" name="lastname" size="10" required/>  
+            </label>
+            <label class="passbox">
+            @email:          
+            <input type="email" class="reg__field" name="lastname" size="15" required/>  
             </label>
             <label class="passbox">
             Password
-            <input  class="reg__field" type="password" id="pswrd">
+            <input  class="reg__field" type="password" id="pswrd" required>
             <span class="toggle__btn"></span>
             </label>
             <p>By clicking Submit, you agree to our <a href='/index.html' class="policy">policy</a></p>
-            <button class="btn account__btn ">Submit</button>
+            <a  href='/index.html' class="btn account__btn Submit__btn">Submit</a>
         </div>
     </form>
 <script src="regForm.js"></script>
