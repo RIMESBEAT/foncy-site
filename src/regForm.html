@@ -10,32 +10,33 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div class="reg__form">
-        <form action="">
-        <hi class="sponsor__head">Register Account</hi>
-        <br><br>
-        
-            <label> Firstname </label>         
-            <input type="text" name="firstname" class="input__field reg__field" size="15"/> 
-            <label> Lastname: </label>         
-            <input type="text" name="lastname" class="input__field reg__field" size="15"/>  
-            <label> Gender :</label> 
-            <input type="radio"  name="sex"/> Male  
-            <input type="radio" name="sex"/> Female 
-            <input type="radio" name="sex"/> Other  
-            <br><br>
-            <label>Phone :</label>  
-            <input type="text" name="country code" class="input__field reg__field" value="+234" size="2"/>   
-            <input type="text" name="phone" class="input__field reg__field" size="10"/>
-            Email:  
-            <input type="email" id="email" class="input__field reg__field" name="email"/> 
-            Password:  
-            <input type="Password" id="pass" class="input__field reg__field" name="pass">
-            Re-type password:  
-            <input type="Password" id="repass" class="input__field reg__field" name="repass">     
+        <form action="" class="reg__form">
+            <div class="input__box">
+            <span class="userIcon">
+            <i class="fa-solid fa-user"></i>
+            <hi class="reg__head">Register Account</hi>
+            </span>
+            <label class="passbox"> 
+            Firstname:         
+            <input type="text" class="reg__field" name="firstname" size="15"/> 
+            </label>
+            <label class="passbox">
+            Surname:          
+            <input type="text" class="reg__field" name="lastname" size="15"/>  
+            </label>
+            <label class="passbox">
+            Phone:          
+            <input type="text" class="reg__field" name="lastname" size="15"/>  
+            </label>
+            <label class="passbox">
+            Password
+            <input  class="reg__field" type="password" id="pswrd">
+            <span class="toggle__btn"></span>
+            </label>
+            <p>By clicking Submit, you agree to our <a href='/index.html' class="policy">policy</a></p>
+            <button class="btn account__btn ">Submit</button>
+        </div>
     </form>
-    <input type="button" class="btn submit__btn account__btn" value="Submit"/> 
-    </div>
-
+<script src="regForm.js"></script>
 </body>
 </html>

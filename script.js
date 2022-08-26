@@ -75,6 +75,7 @@ const swiper = new Swiper('.swiper', {
   const modalBox = document.querySelector('.modal__box')
   const modalClose = document.querySelector('.modal__close')
   const logoSpin = document.querySelector('.logo__spin')
+
 //          NAV TOGGLE
 
 
@@ -292,3 +293,6 @@ copyright.innerHTML = 'copyright &copy; ' + newYear
 document.addEventListener('DOMContentloaded', (e) => {
   e.logoSpin.classList.remove('hidden')
 })
+
+//        PASSWORD CHECK
+

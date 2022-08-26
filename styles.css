@@ -614,7 +614,7 @@ section{
     border-radius: 6px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     z-index: 3;
-
+    
 }
 .sign__field{
     width: 100%;
@@ -627,7 +627,7 @@ section{
     border-color: var(--red) ;
     color: var(--white);
     font-weight: 700;
-    background:#D92414;
+    background: var(--red);
     align-items: center;
     justify-content: center;
 
