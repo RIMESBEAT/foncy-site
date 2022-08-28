@@ -106,10 +106,14 @@ section{
     align-items: center;
     justify-content: center;
     gap: 1rem;
+    transition: var(--transition);
+   
+
   
 }
 .nav__items{
     position: relative;
+  
 }
 .bugger__btn{
     position: absolute;
@@ -403,7 +407,7 @@ section{
 }
 .CTA__btn{
     opacity: 0;
-    font-size: 2rem;
+    font-size: 1.5rem;
     animation: CTA__Animation;
     animation-duration: 2s;
     animation-iteration-count: infinite;
@@ -614,6 +618,9 @@ section{
     border-radius: 6px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     z-index: 3;
+    animation: fade-slide-in;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
     
 }
 .sign__field{
@@ -672,18 +679,32 @@ section{
     animation: logoSpin;
     animation-duration: 3s;
     animation-duration: infinite;
+    
 
 }
-@keyframes logoSpin{
-    from{transform: rotate(80deg);}
-    to{transform: rotate(0deg);}
-}
 
 
+@keyframes fade-slide-in {
+    from {
+      transform: translateY(-5rem);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+@keyframes fade-slide-in-right {
+    from {
+      transform: translateX(5rem);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
 @media (max-width:903px){
     .overlay{
     width: 200vw;
-    height: 1000vh;
+    height: 600vh;
     backdrop-filter: blur(3px);
     z-index: 3;
     display: flex;
@@ -700,9 +721,11 @@ section{
     }
     .hidden{
         display: none;
+
     }
     .btn__hide{
         display: block;
+        
 
 
     }
@@ -716,13 +739,7 @@ section{
         animation-duration: .8s;
         animation-iteration-count: 1;
     }
-    .nav__links::after{
-        content: '';
-    animation: navTransition;
-    animation-duration: .5s;
-    animation-iteration-count: 1;
-    animation-play-state: running;
-    }
+
     .nav__links {
     flex-direction: column;
     width: 300px;
@@ -734,22 +751,12 @@ section{
     top: 1rem;
     border-radius:0 0 12px  12px  ;
     box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.5);
-    animation: navTransition;
+    animation: fade-slide-in-right;
     animation-duration: .5s;
-    animation-iteration-count: 1;
+    
+    
+   
     }
-  
-
-    @keyframes navTransition{
-        50%{transform: translate(70px, 10px);}
-
-    }
-    @keyframes navRotate{
-        70%{transform: rotate(80deg);}
-        100%{transform: rotate(0deg);}
-
-    }
-
 
     .links{
         border: none;

@@ -92,7 +92,7 @@ const closeIcon = () => {
     overlay.classList.add('hidden')
 }
 const modalContent = () => {
-  modalBox.classList.remove('modal__hidden')
+  modalBox.classList.toggle('modal__hidden')
   overlay.classList.remove('hidden')
 }
 const closeModalContent = () => {
@@ -163,7 +163,6 @@ const aboutHeight = ctaBtn.getBoundingClientRect().height
 const actionBtn = function (entries) {
   
   const [entry] = entries
-  console.log(entry);
   if (!entry.isIntersecting) ctaBtn.classList.add('CTA__sticky')
   else ctaBtn.classList.remove('CTA__sticky')
   
@@ -258,8 +257,6 @@ operationBtnContainer.addEventListener('click', (e) => {
   clicked.classList.add('.content__active')
   operationContent.forEach(t => t.classList.remove('content__active'))
   clicked.classList.add('content__active')
-  
-  console.log(clicked);
   document.querySelector(`.operation__content--${clicked.dataset.tab}`).classList.add('content__active')
 })
 
