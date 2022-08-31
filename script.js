@@ -1,6 +1,5 @@
 'use strict'
 const swiper = new Swiper('.swiper', {
- 
   // Disable preloading of all images
   preloadImages: false,
   // Enable lazy loading
@@ -17,7 +16,6 @@ const swiper = new Swiper('.swiper', {
       clickable: true,
      
     },
-  
     // Navigation arrows
     navigation: {
       nextEl: '.fa-circle-arrow-right',
@@ -53,8 +51,6 @@ const swiper = new Swiper('.swiper', {
       }
     },
   });
-
-
   const operationBtnContainer = document.querySelector('.operation__btn__container')
   const tabs = document.querySelectorAll('.operation__btn')
   const operationContent= document.querySelectorAll('.operation__content')
@@ -75,11 +71,7 @@ const swiper = new Swiper('.swiper', {
   const modalBox = document.querySelector('.modal__box')
   const modalClose = document.querySelector('.modal__close')
   const logoSpin = document.querySelector('.logo__spin')
-
 //          NAV TOGGLE
-
-
-
 
 const burgerIcon = () => {
     navLinks.classList.remove('hidden')
@@ -110,31 +102,7 @@ links.forEach(btn => btn.addEventListener('click', closeIcon))
 
 accountBtn.addEventListener('click', modalContent)
 modalClose.addEventListener('click', closeModalContent)
-
-
 //     NAV TOGGLE END
-
-//      NAV OPACITY EFFECT
-
-// const handleHover = function (e) {
-//   console.log(this);
-//   if (e.target.classList.contains('.links')) {
-//     const hoverLinks = e.target
-//     const siblings = hoverLinks.closest('.nav__container').querySelectorAll('.links')
-//     const logo = hoverLinks.closest('.nav__container').querySelector('.logo')
-//     siblings.forEach(el => {
-//       if (el !== hoverLinks)el.style.opacity = this
-//     })
-//     logo.style.opacity=this
-//   }
-  
-// }
-
-// nav.addEventListener('mouseover', handleHover.bind(0.1))
-// nav.addEventListener('mouseout', handleHover.bind(1))
-
-
-
 
 //        STICKY SCROLL
 
@@ -154,8 +122,6 @@ const headerObserver = new IntersectionObserver(stickyNav, {
   rootMargin: `-${navHeight}px`,
 })
 headerObserver.observe(header)
-
-
 //       Call To Action Btn
 
 const aboutHeight = ctaBtn.getBoundingClientRect().height
@@ -185,8 +151,6 @@ navLinks.addEventListener('click',(e) =>{
   links.forEach(c => c.classList.remove('active'))
   activeClicked.classList.add('active')
 })
-
-
 //      API
 fetch('https://fakestoreapi.com/products').then((res) => {
   return res.json()
@@ -237,14 +201,10 @@ fetch('https://fakestoreapi.com/products').then((res) => {
     document.querySelector('.cards1').innerHTML = response
 })
 //    API END
-
-
 // FORM RESET
 document.querySelector('form').addEventListener('click', (e) => {
   e.preventDefault()
 })
-
-
 //       Tabs
 
 operationBtnContainer.addEventListener('click', (e) => {
@@ -281,7 +241,6 @@ allSections.forEach((section) => {
   section.classList.add('section__hidden')
 })
 
-
 //        Copyright
 let newYear = new Date().getFullYear()
 copyright.innerHTML = 'copyright &copy; ' + newYear
@@ -291,5 +250,4 @@ document.addEventListener('DOMContentloaded', (e) => {
   e.logoSpin.classList.remove('hidden')
 })
 
-//        PASSWORD CHECK
 

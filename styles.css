@@ -671,16 +671,11 @@ section{
 
 
 
-.logo__spin{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    z-index: 20;
-    animation: logoSpin;
-    animation-duration: 3s;
-    animation-duration: infinite;
-    
-
+.show__map__box{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    z-index: 100;
 }
 
 
